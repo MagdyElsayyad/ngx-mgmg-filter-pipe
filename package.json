@@ -1,9 +1,12 @@
 {
   "name": "ngx-mgmg-filter-pipe",
+  "displayName": "ngx-mgmg-filter-pipe",
   "version": "17.0.0",
   "description": "Angular +17 pipeline for filtering arrays",
   "author": "Magdy Elsayyad <magdy.elsayyad229@gmail.com>",
   "license": "MIT",
+  "packageManager": "npm@10.5.0",
+  "private": false,
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -13,8 +16,11 @@
     "test:ci": "ng test --watch=false --browsers=ChromeHeadlessCustom",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "packagr": "ng-packagr -p package.json",
+    "packagr": "ng-packagr -p ng-packgr.json",
     "docs": "ng build --prod --output-path docs --base-href ngx-mgmg-filter-pipe && cp ./docs/index.html ./docs/404.html"
+  },
+  "publishConfig": {
+    "access": "public"
   },
   "engines": {
     "node": "20.12.2",
